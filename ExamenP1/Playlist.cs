@@ -8,21 +8,21 @@ namespace ExamenP1
 {
     class Playlist
     {
-        public string TituloPlay { get; set; }
+        public string TituloPeliculas { get; set; }
         public string Descripcion { get; set; }
         public List<Pelicula> Peliculas { get; set; }
 
 
         public Playlist()
         {
-            TituloPlay = "Sin asignar";
-            Descripcion = "Pendiente";
+            TituloPeliculas = "asignar";
+            Descripcion = "asignar";
             Peliculas = new List<Pelicula>();
         }
 
-        public Playlist(string tituloplay, string descripcion)
+        public Playlist(string titulopeliculas, string descripcion)
         {
-            TituloPlay = tituloplay;
+            TituloPeliculas = titulopeliculas;
             Descripcion = descripcion;
             Peliculas = new List<Pelicula>();
         }

@@ -20,7 +20,7 @@ namespace ExamenP1
             }
             set
             {
-                if (value >= 1800 && value <= 2019)
+                if (value >= 1800 & value <= 2019)
                 {
                     _año = value;
                 }
@@ -33,7 +33,7 @@ namespace ExamenP1
 
         public string Director { get; set; }
         public string Genero { get; set; }
-        public string PaisOrigen { get; set; }
+        public string PaisDeOrigen { get; set; }
         private int _duracion;
         public int Duracion
         {
@@ -69,7 +69,7 @@ namespace ExamenP1
                 }
                 else
                 {
-                    throw new Exception("El numero no esta fuera del rango");
+                    throw new Exception("El numero esta fuera del rango");
                 }
             }
         }
@@ -83,7 +83,7 @@ namespace ExamenP1
             Año = 0;
             Director = "Asignar";
             Genero = "Asignar";
-            PaisOrigen = "Asignar";
+            PaisDeOrigen = "Asignar";
             Duracion = 2;
             RatingImdb = 0.00;
             Sinopsis = "Asignar";
@@ -95,7 +95,7 @@ namespace ExamenP1
             Año = año;
             Director = "Asignar";
             Genero = "Asignar";
-            PaisOrigen = "Asignar";
+            PaisDeOrigen = "Asignar";
             Duracion = 2;
             RatingImdb = 0.00;
             Sinopsis = "Asignar";
