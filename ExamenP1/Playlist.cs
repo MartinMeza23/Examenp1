@@ -8,19 +8,23 @@ namespace ExamenP1
 {
     class Playlist
     {
-        public string Pelis  { get; set; }
-        public string Año { get; set; }
+        public string TituloPlay { get; set; }
+        public string Descripcion { get; set; }
+        public List<Pelicula> Peliculas { get; set; }
 
-        public List<Pelicula> peliculas { get; set; }
 
-
-        public Pelicula(string pelis , string año)
+        public Playlist()
         {
-            Pelis = pelis;
-            Año = año;
+            TituloPlay = "Sin asignar";
+            Descripcion = "Pendiente";
+            Peliculas = new List<Pelicula>();
+        }
 
-            peliculas = new List<Pelicula>();
-
+        public Playlist(string tituloplay, string descripcion)
+        {
+            TituloPlay = tituloplay;
+            Descripcion = descripcion;
+            Peliculas = new List<Pelicula>();
         }
     }
 }
